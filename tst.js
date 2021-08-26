@@ -296,5 +296,8 @@ country[1].addEventListener("change", function () {
   }
 })
 
-
+var mainForm = _id("main_form")
+mainForm.addEventListener("submit", function(){
+  if()
+})
 

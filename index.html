@@ -61,63 +61,63 @@
   <!-- /////////////////////////////// -->
   <div class="bg_img">
   </div>
-  <div class="page_content">
- 
-      <div class="plane_ticket border border-5 border-success rounded-3 p-4">
-        <h1 class="text-success mb-5 text-center">رزور آنلاین بلیط هواپیما</h1>
-        <div class="row g-5 py-4">
-          <div class="right_form col-4 px-3">
-            <form action="#" class="flex-column d-flex">
-              <select name="Country" id="country" class="country mb-4 py-2 px-3 rounded text-secondary">
-                <option value="">کشور مبدا مورد نظر خود را انتخاب کنید</option>
-              </select>
+  <form id="main_form" action="https://www.google.com" class="page_content">
 
-              <select name="City" id="city" class="city mb-4 py-2 px-3 rounded text-secondary">
-                <option value="">شهر مبدا مورد نظر خود را انتخاب کنید</option>
-              </select>
+    <div class="plane_ticket border border-5 border-success rounded-3 p-4">
+      <h1 class="text-success mb-5 text-center">رزور آنلاین بلیط هواپیما</h1>
+      <div class="row g-5 py-4">
+        <div class="right_form col-4 px-3 flex-column d-flex">
 
-              <select name="flightType" id="flight_type" class="mb-4 py-2 px-3 rounded text-secondary">
-                <option value="">نوع پرواز را انتخاب کنید</option>
-              </select>
+          <select name="Country" id="country" class="country mb-4 py-2 px-3 rounded text-secondary">
+            <option value="">کشور مبدا مورد نظر خود را انتخاب کنید</option>
+          </select>
 
-              <select name="age" id="age" class="mb-4 py-2 px-3 rounded text-secondary">
-                <option value="">سن مورد نظر را انتخاب کنید</option>
-              </select>
-            </form>
-          </div>
+          <select name="City" id="city" class="city mb-4 py-2 px-3 rounded text-secondary">
+            <option value="">شهر مبدا مورد نظر خود را انتخاب کنید</option>
+          </select>
 
-          <div class="right_form flex-column d-flex col-4 px-5 text-center">
-            <span class="text-success fs-4 mb-3 py-1">کشور مبدا | کشور مقصد</span>
-            <span class="text-success fs-4 mb-3 py-1">شهر مبدا | شهر مقصد</span>
-            <span class="text-success fs-4 mb-3 py-1">نوع پرواز | نوع صندلی</span>
-            <span class="text-success fs-4 mb-3 py-1">سن | جنسیت</span>
-          </div>
+          <select name="flightType" id="flight_type" class="mb-4 py-2 px-3 rounded text-secondary">
+            <option value="">نوع پرواز را انتخاب کنید</option>
+          </select>
 
-          <div class="right_form col-4 px-3">
-            <form action="#" class="flex-column d-flex">
-              <select name="Country" id="country" class="country mb-4 py-2 px-3 rounded text-secondary">
-                <option value="">کشور مقصد مورد نظر خود را انتخاب کنید</option>
-              </select>
+          <select name="age" id="age" class="mb-4 py-2 px-3 rounded text-secondary">
+            <option value="">سن مورد نظر را انتخاب کنید</option>
+          </select>
 
-              <select name="City" id="city" class="city mb-4 py-2 px-3 rounded text-secondary">
-                <option value="">شهر مقصد مورد نظر خود را انتخاب کنید</option>
-              </select>
+        </div>
 
-              <select name="seatType" id="seat_type" class="mb-4 py-2 px-3 rounded text-secondary">
-                <option value="">نوع صندلی را انتخاب کنید</option>
-              </select>
+        <div class="right_form flex-column d-flex col-4 px-5 text-center">
+          <span class="text-success fs-4 mb-3 py-1">کشور مبدا | کشور مقصد</span>
+          <span class="text-success fs-4 mb-3 py-1">شهر مبدا | شهر مقصد</span>
+          <span class="text-success fs-4 mb-3 py-1">نوع پرواز | نوع صندلی</span>
+          <span class="text-success fs-4 mb-3 py-1">سن | جنسیت</span>
+        </div>
 
-              <select name="gender" id="gender" class="mb-4 py-2 px-3 rounded text-secondary">
-                <option value="">جنسیت مورد نظر را انتخاب کنید</option>
-              </select>
-            </form>
-          </div>
+        <div class="right_form col-4 px-3 flex-column d-flex">
+
+          <select name="Country" id="country" class="country mb-4 py-2 px-3 rounded text-secondary">
+            <option value="">کشور مقصد مورد نظر خود را انتخاب کنید</option>
+          </select>
+
+          <select name="City" id="city" class="city mb-4 py-2 px-3 rounded text-secondary">
+            <option value="">شهر مقصد مورد نظر خود را انتخاب کنید</option>
+          </select>
+
+          <select name="seatType" id="seat_type" class="mb-4 py-2 px-3 rounded text-secondary">
+            <option value="">نوع صندلی را انتخاب کنید</option>
+          </select>
+
+          <select name="gender" id="gender" class="mb-4 py-2 px-3 rounded text-secondary">
+            <option value="">جنسیت مورد نظر را انتخاب کنید</option>
+          </select>
+
         </div>
       </div>
+    </div>
 
-      <button id="submit_btn" class="btn btn-success rounded-pill col-12 p-3 my-3">پرداخت و رزور آنلاین</button>
-    
-  </div>
+    <button id="submit_btn" class="btn btn-success rounded-pill col-12 p-3 my-3">پرداخت و رزور آنلاین</button>
+
+  </form>
 
 
 
