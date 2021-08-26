@@ -241,6 +241,7 @@ var city = _class('city')
 var flightType = _id("flight_type")
 var passangerAge = _id("age")
 var gender = _id("gender")
+var inputCountry = _class("input_country")
 
 // countrySelect
 
@@ -258,11 +259,10 @@ for (var i = 0; i < countryArray.length; i++) {
   country[1].appendChild(countryOpt)
 }
 
+// citySelect
 
-// islandCitySelect
-
-country[0].addEventListener("change", function () {
-  if (country[0].value == "ایسلند") {
+inputCountry[0].addEventListener("change", function () {
+  if (inputCountry[0].value == "ایسلند") {
     for (var i = 0; i < islandCitys.length; i++) {
       var islandOpt = $.createElement("option")
       islandOpt.innerHTML = islandCitys[i]
@@ -270,10 +270,19 @@ country[0].addEventListener("change", function () {
       city[0].appendChild(islandOpt)
     }
   }
+  
+  else if (inputCountry[0].value == "ایران") {
+    for (var i = 0; i < iranCitys.length; i++) {
+      var iranOpt = $.createElement("option")
+      iranOpt.innerHTML = iranCitys[i]
+      iranOpt.value = iranCitys[i]
+      city[0].append(iranOpt)
+    }
+  }
 })
 
-country[1].addEventListener("change", function () {
-  if (country[1].value == "ایسلند") {
+inputCountry[1].addEventListener("change", function () {
+  if (inputCountry[1].value == "ایسلند") {
     for (var i = 0; i < islandCitys.length; i++) {
       var islandOpt = $.createElement("option")
       islandOpt.innerHTML = islandCitys[i]
@@ -281,48 +290,34 @@ country[1].addEventListener("change", function () {
       city[1].appendChild(islandOpt)
     }
   }
-})
 
-// iranCitySelect
-
-country[0].addEventListener("change", function () {
-  if (country[0].value == "ایران") {
+  else if (inputCountry[1].value == "ایران") {
     for (var i = 0; i < iranCitys.length; i++) {
-      var islandOpt = $.createElement("option")
-      islandOpt.innerHTML = iranCitys[i]
-      islandOpt.value = iranCitys[i]
-      city[0].appendChild(islandOpt)
+      var iranOpt = $.createElement("option")
+      iranOpt.innerHTML = iranCitys[i]
+      iranOpt.value = iranCitys[i]
+      city[1].appendChild(iranOpt)
     }
   }
 })
 
-country[1].addEventListener("change", function () {
-  if (country[1].value == "ایران") {
-    for (var i = 0; i < iranCitys.length; i++) {
-      var islandOpt = $.createElement("option")
-      islandOpt.innerHTML = iranCitys[i]
-      islandOpt.value = iranCitys[i]
-      city[1].appendChild(islandOpt)
-    }
-  }
-})
+
 
 ////////////////////////////////////////////////////////
 
 // disabledFlightType
 
 country[0].addEventListener("change", function () {
-   (country[0].value == "ایران") 
-    ?  flightType[2].disabled = true
-    :  flightType[2].disabled = false
-  
+  (country[0].value == "ایران")
+    ? flightType[2].disabled = true
+    : flightType[2].disabled = false
+
 })
 
 
 
 mainForm.addEventListener("submit", function (event) {
- if (country[0].value == "" || country[1].value == "" || city[0].value == "" || city[1].value == "" || flightType.value == "" || passangerAge.value == "" || gender.value == "") 
+  if (country[0].value == "" || country[1].value == "" || city[0].value == "" || city[1].value == "" || flightType.value == "" || passangerAge.value == "" || gender.value == "") {
     event.preventDefault()
-  
+  }
 })
-

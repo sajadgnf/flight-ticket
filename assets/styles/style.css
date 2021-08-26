@@ -3,18 +3,18 @@ body{
 }
 
 .bg_img{
-    background-image: url(travel.jpg);
+    background-image: url(../images/travel.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(4px);
-    height: 100vh
+    height: 100vh;
 }
 
 .page_content{
     position: absolute;
-    top: 20%;
-    right: 15%;
+    top: 10%;
+    right: 20%;
 }
 
 .plane_ticket{
