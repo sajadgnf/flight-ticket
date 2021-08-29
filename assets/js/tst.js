@@ -252,6 +252,7 @@ for (var i = 0; i < countryArray.length; i++) {
   country[0].appendChild(countryOpt)
 }
 
+
 for (var i = 0; i < countryArray.length; i++) {
   var countryOpt = $.createElement("option")
   countryOpt.innerHTML = countryArray[i]
@@ -276,7 +277,7 @@ inputCountry[0].addEventListener("change", function () {
       var iranOpt = $.createElement("option")
       iranOpt.innerHTML = iranCitys[i]
       iranOpt.value = iranCitys[i]
-      city[0].append(iranOpt)
+      city[0].appendChild(iranOpt)
     }
   }
 })
